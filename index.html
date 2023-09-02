@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jimp.js" type="text/javascript"></script>
+        <script src="conv.js" type="text/javascript" defer></script>
+    </head>
+    <style>
+        div, p {
+            font-size: 3px;
+            margin: 0px;
+            font-family: Arial;
+        }
+
+        div {
+            display: flex;
+        }
+
+        .flex {
+            display: flex;
+        }
+        body {
+            display: block;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+        main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <body>
+        <input type="file" onchange="onFileChange(this);">
+        <main id="main"></main>
+    </body>
+</html>
